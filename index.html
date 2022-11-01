@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es_MX">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script type="text/JavaScript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" ></script>
+
+    <title>Combinación de colores para ropa</title>
+</head>
+<body>
+    <div class="container">
+        <div class="nav-bar">
+            <h1>Selecciona el color de la playera</h1>
+        </div>
+        <div class="color_container" style="background-color: transparent;">
+            <input onChange="update(this.jscolor)" onInput="update(this.jscolor)" value="CCFFAA" data-jscolor="{alpha:1}">
+        </div>
+        <div class="clothes_container">
+            <div class="color_container" id="color1">
+                <img src="./img/t-shirt.png" alt="Playera/Blusa">
+                <h4>Playera/Blusa</h4>
+            </div>
+            <div class="color_container" id="color2">
+                <img src="./img/Short-Pants.png" alt="Pantalón/Short">
+                <h4>Pantalón/Short</h4>
+            </div>
+            <div class="color_container" id="color3">
+                <img src="./img/sneakers.png" alt="Zapatos/Tenis">
+                <h4>Zapatos/Tenis</h4>
+            </div>
+        </div>
+        <button id="show_rgb" onclick="showRGB();">Motrar formato RGB</button>
+    </div>
+    <script src="./js/jscolor.js"></script>
+    <script src="//unpkg.com/brain.js"></script>
+    <script src="./js/jquery.csv.js"></script>
+    <script src="./js/ann.js"></script>
+</body>
+</html>
